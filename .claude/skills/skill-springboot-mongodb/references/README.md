@@ -1,0 +1,24 @@
+---
+name: skill-springboot-mongodb
+description: Implementação de persistência de dados utilizando MongoDB e Spring Data MongoDB seguindo padrões de arquitetura hexagonal e alta performance.
+---
+
+# 🍃 Skill: Spring Boot MongoDB
+
+Implementação de persistência de dados utilizando MongoDB e Spring Data MongoDB seguindo padrões de arquitetura hexagonal e alta performance.
+
+### 🤖 Como acionar no Chat da IA:
+> **"/skill-springboot-mongodb Implemente a persistência da entidade Account usando MongoDB"**
+
+### 📚 O que esta Skill entrega:
+- **Repositórios Avançados**: Uso de `MongoRepository` com queries customizadas e SpEL.
+- **Consultas Complexas**: Integração com `MongoTemplate` para agregações e filtros dinâmicos.
+- **Performance e Escalabilidade**: Estratégias de paginação eficiente (cursor-based) e indexação.
+- **Integridade**: Configuração de transações e isolamento via Arquitetura Hexagonal.
+
+### 🔗 Atalhos de Referência:
+- [Integração de Repositório](./MONGODB_REPOSITORY_INTEGRATION.md) 📦
+- [Uso do MongoTemplate](./MONGODB_TEMPLATE_USAGE.md) 🛠️
+- [Queries e SpEL](./MONGODB_QUERY_METHODS.md) 🔍
+- [Transações](./MONGODB_TRANSACTIONS.md) 🛡️
+- [Paginação Eficiente](./MONGODB_PAGINATION.md) 📄

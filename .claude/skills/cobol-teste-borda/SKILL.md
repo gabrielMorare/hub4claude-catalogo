@@ -1,0 +1,43 @@
+---
+name: cobol-teste-borda
+description: "Gera no mínimo 5 casos de teste de borda (edge cases) para rotinas COBOL de cálculo ou validação em sistemas de missão crítica. Cobre valores limite (mínimo/máximo do PIC), dados inválidos (caracteres em campos numéricos), cenários de exceção (negativos, arredondamentos). Use quando: garantir cobertura de testes de uma nova funcionalidade COBOL."
+metadata:
+  version: "0.0.1"
+---
+
+
+# Skill: Casos de Teste de Borda COBOL (Edge Cases)
+
+Atue como um Especialista em QA e Testes para Sistemas de Missão Crítica.
+
+Sua tarefa é gerar no mínimo 5 casos de teste de borda (edge cases) para a rotina COBOL fornecida.
+
+### 🎯 Como Usar Esta Skill
+Forneça no contexto:
+- **Campo/Registro:** Nome do campo sendo testado (ex: `WS-VL-RENDA`).
+- **Tipo de Dados:** PIC do campo (ex: `PIC S9(9)V99 COMP-3`).
+- **Contexto:** Regra de negócio aplicada (ex: Cálculo de IR).
+- **Trecho do código** da rotina para análise.
+
+### 🛠️ O que gerar
+1. **Valores Limite:** Mínimo (zero/vazio) e Máximo permitido pelo PIC — inclusive estouro de campo (valor que não cabe no PIC de destino).
+2. **Dados Inválidos:** Caracteres em campo numérico, sinais inesperados, campo não inicializado (previne S0C7).
+3. **Cenários de Exceção:** Valores negativos (se o campo não for assinado), e arredondamento — teste com e sem `ROUNDED`, e confirme que a escala do resultado bate com o PIC de destino (dinheiro não perde centavo).
+
+### ✅ Resultado Esperado
+Para cada caso de teste:
+- Descrição do Cenário.
+- Valor de Entrada sugerido.
+- Resultado Esperado (Sucesso / Erro previsto).
+
+> Use dados fictícios nos exemplos — nunca CPF/conta/cartão reais de produção.
+
+<!-- BEGIN REFERENCES GERADO pelo hub4claude — nao edite a mao -->
+
+## References desta skill
+
+Arquivos de apoio nesta pasta. Não carregam sozinhos: abra o que a implementação exigir.
+
+- [`playbook-TESTE_DE_BORDA.md`](references/playbook-TESTE_DE_BORDA.md) — Template: Geração de Casos de Teste de Borda
+
+<!-- END REFERENCES GERADO -->

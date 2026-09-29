@@ -1,0 +1,180 @@
+{
+  "_comment": "Config da distribuicao do hub4claude, gerado pelo exportador de quem mantem o catalogo. Nao edite: a proxima exportacao o sobrescreve. A sua escolha de stacks fica em tools/sync.local.json (use /catalogo-foursys).",
+  "_comment_globalStacks": "Stacks que vao para o ~/.claude quando voce nao escolhe outras (o padrao da equipe). tools/sync.local.json, se existir, vence esta lista.",
+  "globalStacks": [
+    "java",
+    "node",
+    "angular",
+    "arquitetura",
+    "qa",
+    "consumo"
+  ],
+  "_comment_keep": "Arquivos de autoria local do catalogo: o deploy nunca os remove do ~/.claude enquanto a stack deles estiver publicada.",
+  "keepFiles": [
+    "skills/catalogo-foursys",
+    "skills/skill-springboot-log-negocio",
+    "skills/skill-springboot-certificado-impl/references/ssl-certificado-lib.md",
+    "skills/sdd-tasks"
+  ],
+  "_comment_stacksCatalogo": "Stack de cada arquivo do catalogo, usada para filtrar o global: \"origens\" = caminho de origem no hub; \"locais\" = arquivos de autoria local, pelo caminho no .claude/.",
+  "stacks": {
+    "java": {
+      "nome": "Backend Java / Spring Boot (inclui Java legado)",
+      "origens": [
+        "agents_skills/spring_boot/",
+        "agents_skills/java-legado/",
+        "agents_skills/shared/skills/certificado-ssl-local/",
+        "sdd/spring_boot/",
+        "instructions/HEXAGONAL_JAVA.md",
+        "instructions/MVC_JAVA.md",
+        "instructions/PRONTIDAO_MODERNIZACAO_JAVA.md",
+        "instructions/springboot-hexagonal-arch/",
+        "playbook/fase3_portoes_qualidade/FASE3_REVIEW_SPRING.md",
+        "playbook/fase3_portoes_qualidade/FASE3_TESTES_SPRING.md",
+        "playbook/fase3_portoes_qualidade/FASE3_VALIDACAO_HEXAGONAL.md",
+        "playbook/fase3_portoes_qualidade/FASE3_VALIDACAO_MVC.md"
+      ],
+      "locais": [
+        "skills/skill-springboot-log-negocio",
+        "skills/skill-springboot-certificado-impl/references/ssl-certificado-lib.md"
+      ]
+    },
+    "node": {
+      "nome": "Backend Node.js / NestJS",
+      "origens": [
+        "sdd/node/"
+      ]
+    },
+    "angular": {
+      "nome": "Frontend Angular (inclui design systems web)",
+      "origens": [
+        "agents_skills/angular/",
+        "sdd/angular/",
+        "instructions/ANGULAR_FRONTEND.md",
+        "instructions/angular-vertical-slice-arch/",
+        "design-systems/",
+        "playbook/fase3_portoes_qualidade/FASE3_REVIEW_ANGULAR.md",
+        "playbook/fase3_portoes_qualidade/FASE3_TESTES_ANGULAR.md"
+      ]
+    },
+    "arquitetura": {
+      "nome": "Arquitetura e engenharia de software, agnóstica de stack (SDD, especificação, review, TDD, diagramas, clean code, segurança)",
+      "origens": [
+        "agents_skills/shared/",
+        "agents_skills/sdd/",
+        "sdd/generic/",
+        "playbook/sdd/",
+        "playbook/fase0_descoberta_arquitetura/",
+        "playbook/fase2_desenho_tecnico/",
+        "playbook/fase3_portoes_qualidade/",
+        "playbook/fase4_homologacao_entrega/",
+        "instructions/SOLID_CLEAN_CODE.md",
+        "instructions/SECURITY_COMPLIANCE.md",
+        "instructions/TESTING_PATTERNS.md"
+      ],
+      "locais": [
+        "skills/sdd-tasks"
+      ]
+    },
+    "negocio": {
+      "nome": "Negócio e produto (Product Owner, discovery, PRD, histórias, refinamento)",
+      "origens": [
+        "agents_skills/product-owner/",
+        "agents_skills/business/",
+        "agents_skills/shared/skills/refinamento-negocio/",
+        "sdd/generic/foursys-po-",
+        "playbook/fase1_refinamento_negocio/",
+        "backlog/"
+      ],
+      "locais": []
+    },
+    "qa": {
+      "nome": "Quality Assurance agnóstico de stack (planos, casos e automação genéricos, dados de teste, Playwright). A QA de cada stack fica na própria stack",
+      "origens": [
+        "agents_skills/quality-assurance/",
+        "agents_skills/shared/skills/playwright-bdd-feature-generation/",
+        "sdd/generic/foursys-qa-"
+      ]
+    },
+    "cobol": {
+      "nome": "Mainframe COBOL",
+      "origens": [
+        "agents_skills/cobol/",
+        "sdd/cobol/",
+        "instructions/CLEAN_CODE_COBOL.md",
+        "instructions/ESTRUTURA_E_IDENTIFICACAO.md",
+        "instructions/SEGURANCA_PERFORMANCE_MAINFRAME.md",
+        "playbook/fase5_modernizacao_legado/"
+      ]
+    },
+    "android": {
+      "nome": "Mobile Android",
+      "origens": [
+        "agents_skills/android/",
+        "sdd/android/",
+        "design-systems/android-liquid.md"
+      ]
+    },
+    "ios": {
+      "nome": "Mobile iOS",
+      "origens": [
+        "agents_skills/ios/",
+        "sdd/ios/",
+        "design-systems/ios-liquid.md"
+      ]
+    },
+    "pendente": {
+      "nome": "Em avaliação — classificação ambígua; fica no .claude/ do repo e fora do global até decisão (doc/pendente/dossie-hub-foursys.md). Não pôr em globalStacks",
+      "origens": [
+        "sdd/generic/foursys-specify.md",
+        "sdd/generic/foursys-plan.md",
+        "sdd/spring_boot/foursys-specify-tech.md",
+        "sdd/angular/foursys-specify-tech.md",
+        "sdd/node/foursys-specify-tech.md",
+        "sdd/cobol/foursys-specify-tech.md",
+        "sdd/android/foursys-specify-tech.md",
+        "sdd/ios/foursys-specify-tech.md"
+      ]
+    },
+    "consumo": {
+      "nome": "Uso do catálogo: escolher stacks e publicar no global (skill /catalogo-foursys) e a documentação do hub. Vai para a distribuição da equipe",
+      "origens": [
+        "README.md",
+        "agents_skills/README.md",
+        "instructions/README.md",
+        "playbook/README.md",
+        "sdd/README.md"
+      ],
+      "locais": [
+        "skills/catalogo-foursys"
+      ]
+    }
+  },
+  "_comment_globalExcludeRules": "Rule que fica no .claude/ do repo (RN0) e NAO vai para o ~/.claude. Nome sem .md. Motivo: no global toda rule com paths amplo carrega em TODO projeto da maquina, e duas arquiteturas obrigatorias ao mesmo tempo fazem o Claude escolher uma de forma imprevisivel (P3). Projeto que adota a arquitetura copia a rule para o .claude/rules/ dele.",
+  "globalExcludeRules": [
+    "hexagonal-java",
+    "mvc-java"
+  ],
+  "_comment_referenciasAceitas": "Quebra de referencia conhecida e aceita, por arquivo. O verificador nao trava nelas; QUALQUER outra trava o --global (Fase 2 da revisao). Cada entrada diz por que. Residual aceito que parar de acontecer aparece no relatorio para ser removido daqui.",
+  "referenciasAceitas": {
+    "skills/skill-angular-tooling/SKILL.md": [
+      "references/cicd-configuration.MD"
+    ],
+    "skills/skill-playwright-bdd-feature-generation/SKILL.md": [
+      "references/step-patterns.md",
+      "references/feature-organization.md"
+    ],
+    "skills/skill-po-iniciar-discovery/SKILL.md": [
+      "references/discovery-prompts.md",
+      "references/lean-inception-lite.md"
+    ],
+    "skills/skill-po-refinar-negocio/SKILL.md": [
+      "../prd/prd.md",
+      "../_intermediarios/discovery.md"
+    ],
+    "skills/skill-po-technical-bridge/SKILL.md": [
+      "../prd/prd.md",
+      "../_intermediarios/discovery.md"
+    ]
+  }
+}

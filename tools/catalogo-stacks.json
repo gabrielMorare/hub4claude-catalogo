@@ -1,0 +1,966 @@
+{
+  "agents/agente-android-foursys.md": {
+    "origem": "agents_skills/android/AGENTE_ANDROID_FOURSYS.md"
+  },
+  "agents/agente-angular-foursys.md": {
+    "origem": "agents_skills/angular/AGENTE_ANGULAR_FOURSYS.md"
+  },
+  "agents/agente-cobol-foursys.md": {
+    "origem": "agents_skills/cobol/AGENTE_COBOL_FOURSYS.md"
+  },
+  "agents/agente-ios-foursys.md": {
+    "origem": "agents_skills/ios/AGENTE_IOS_FOURSYS.md"
+  },
+  "agents/agente-negocio-foursys.md": {
+    "origem": "agents_skills/business/AGENTE_NEGOCIO_FOURSYS.md"
+  },
+  "agents/agente-spring-foursys.md": {
+    "origem": "agents_skills/spring_boot/AGENTE_SPRING_FOURSYS.md"
+  },
+  "agents/sdd-hub-foursys.md": {
+    "origem": "agents_skills/sdd/SDD_HUB_FOURSYS.md"
+  },
+  "backlog/input/EXEMPLO_HISTORIA.md": {
+    "origem": "backlog/input/EXEMPLO_HISTORIA.md"
+  },
+  "references/HUB/agents_skills/angular/README.md": {
+    "origem": "agents_skills/angular/README.md"
+  },
+  "references/HUB/agents_skills/README.md": {
+    "origem": "agents_skills/README.md"
+  },
+  "references/HUB/agents_skills/spring_boot/README.md": {
+    "origem": "agents_skills/spring_boot/README.md"
+  },
+  "references/HUB/agents_skills/spring_boot/skills/README.md": {
+    "origem": "agents_skills/spring_boot/skills/README.md"
+  },
+  "references/HUB/backlog/README.md": {
+    "origem": "backlog/README.md"
+  },
+  "references/HUB/instructions/README.md": {
+    "origem": "instructions/README.md"
+  },
+  "references/HUB/playbook/fase1_refinamento_negocio/README.md": {
+    "origem": "playbook/fase1_refinamento_negocio/README.md"
+  },
+  "references/HUB/playbook/fase2_desenho_tecnico/README.md": {
+    "origem": "playbook/fase2_desenho_tecnico/README.md"
+  },
+  "references/HUB/playbook/fase3_portoes_qualidade/README.md": {
+    "origem": "playbook/fase3_portoes_qualidade/README.md"
+  },
+  "references/HUB/playbook/fase4_homologacao_entrega/README.md": {
+    "origem": "playbook/fase4_homologacao_entrega/README.md"
+  },
+  "references/HUB/playbook/fase5_modernizacao_legado/README.md": {
+    "origem": "playbook/fase5_modernizacao_legado/README.md"
+  },
+  "references/HUB/playbook/README.md": {
+    "origem": "playbook/README.md"
+  },
+  "references/HUB/playbook/sdd/README.md": {
+    "origem": "playbook/sdd/README.md"
+  },
+  "references/HUB/README.md": {
+    "origem": "README.md"
+  },
+  "references/HUB/sdd/README.md": {
+    "origem": "sdd/README.md"
+  },
+  "rules/angular-frontend.md": {
+    "origem": "instructions/ANGULAR_FRONTEND.md"
+  },
+  "rules/angular-vertical-slice-arch.md": {
+    "origem": "instructions/angular-vertical-slice-arch/1.0.0/angular-vertical-slice-arch.instructions.md"
+  },
+  "rules/clean-code-cobol.md": {
+    "origem": "instructions/CLEAN_CODE_COBOL.md"
+  },
+  "rules/estrutura-e-identificacao.md": {
+    "origem": "instructions/ESTRUTURA_E_IDENTIFICACAO.md"
+  },
+  "rules/hexagonal-java.md": {
+    "origem": "instructions/HEXAGONAL_JAVA.md"
+  },
+  "rules/mvc-java.md": {
+    "origem": "instructions/MVC_JAVA.md"
+  },
+  "rules/prontidao-modernizacao-java.md": {
+    "origem": "instructions/PRONTIDAO_MODERNIZACAO_JAVA.md"
+  },
+  "rules/security-compliance.md": {
+    "origem": "instructions/SECURITY_COMPLIANCE.md"
+  },
+  "rules/seguranca-performance-mainframe.md": {
+    "origem": "instructions/SEGURANCA_PERFORMANCE_MAINFRAME.md"
+  },
+  "rules/solid-clean-code.md": {
+    "origem": "instructions/SOLID_CLEAN_CODE.md"
+  },
+  "rules/springboot-hexagonal-arch.md": {
+    "origem": "instructions/springboot-hexagonal-arch/1.0.0/springboot-hexagonal-arch.instructions.md"
+  },
+  "rules/testing-patterns.md": {
+    "origem": "instructions/TESTING_PATTERNS.md"
+  },
+  "skills/cobol-analise-abend/references/playbook-ANALISE_ERRO_ABEND.md": {
+    "origem": "playbook/fase5_modernizacao_legado/2_depuracao_otimizacao/ANALISE_ERRO_ABEND.md",
+    "dona": "skills/cobol-analise-abend/SKILL.md"
+  },
+  "skills/cobol-analise-abend/SKILL.md": {
+    "origem": "agents_skills/cobol/skills/cobol-analise-abend/SKILL_COBOL_ANALISE_ABEND.md"
+  },
+  "skills/cobol-documenta/references/playbook-FASE5_DOCUMENTA_COBOL.md": {
+    "origem": "playbook/fase5_modernizacao_legado/1_compreensao_documentacao/FASE5_DOCUMENTA_COBOL.md",
+    "dona": "skills/cobol-documenta/SKILL.md"
+  },
+  "skills/cobol-documenta/SKILL.md": {
+    "origem": "agents_skills/cobol/skills/cobol-documenta/SKILL_COBOL_DOCUMENTA.md"
+  },
+  "skills/cobol-explica-variaveis/references/playbook-EXPLICA_LOGICA_VARIAVEIS.md": {
+    "origem": "playbook/fase5_modernizacao_legado/1_compreensao_documentacao/EXPLICA_LOGICA_VARIAVEIS.md",
+    "dona": "skills/cobol-explica-variaveis/SKILL.md"
+  },
+  "skills/cobol-explica-variaveis/SKILL.md": {
+    "origem": "agents_skills/cobol/skills/cobol-explica-variaveis/SKILL_COBOL_EXPLICA_VARIAVEIS.md"
+  },
+  "skills/cobol-geracao-batch-avancado/references/ESTRUTURA_E_CONVENCOES.md": {
+    "origem": "agents_skills/cobol/skills/cobol-geracao-batch-avancado/references/ESTRUTURA_E_CONVENCOES.md"
+  },
+  "skills/cobol-geracao-batch-avancado/references/MODELO_COBOL_EXEMPLO.md": {
+    "origem": "agents_skills/cobol/skills/cobol-geracao-batch-avancado/references/MODELO_COBOL_EXEMPLO.md"
+  },
+  "skills/cobol-geracao-batch-avancado/SKILL.md": {
+    "origem": "agents_skills/cobol/skills/cobol-geracao-batch-avancado/SKILL_COBOL_GERACAO_BATCH_AVANCADO.md"
+  },
+  "skills/cobol-geracao-boilerplate/references/playbook-GERACAO_BOILERPLATE.md": {
+    "origem": "playbook/fase5_modernizacao_legado/3_geracao_e_testes/GERACAO_BOILERPLATE.md",
+    "dona": "skills/cobol-geracao-boilerplate/SKILL.md"
+  },
+  "skills/cobol-geracao-boilerplate/SKILL.md": {
+    "origem": "agents_skills/cobol/skills/cobol-geracao-boilerplate/SKILL_COBOL_GERACAO_BOILERPLATE.md"
+  },
+  "skills/cobol-geracao-jcl-multistep/references/PADROES_STEPS.md": {
+    "origem": "agents_skills/cobol/skills/cobol-geracao-jcl-multistep/references/PADROES_STEPS.md"
+  },
+  "skills/cobol-geracao-jcl-multistep/SKILL.md": {
+    "origem": "agents_skills/cobol/skills/cobol-geracao-jcl-multistep/SKILL_COBOL_GERACAO_JCL_MULTISTEP.md"
+  },
+  "skills/cobol-geracao-jcl/references/playbook-GERACAO_JCL.md": {
+    "origem": "playbook/fase5_modernizacao_legado/5_ferramentas_mainframe_db/GERACAO_JCL.md",
+    "dona": "skills/cobol-geracao-jcl/SKILL.md"
+  },
+  "skills/cobol-geracao-jcl/SKILL.md": {
+    "origem": "agents_skills/cobol/skills/cobol-geracao-jcl/SKILL_COBOL_GERACAO_JCL.md"
+  },
+  "skills/cobol-geracao-sql-exec/references/playbook-GERACAO_SQL_EXEC.md": {
+    "origem": "playbook/fase5_modernizacao_legado/5_ferramentas_mainframe_db/GERACAO_SQL_EXEC.md",
+    "dona": "skills/cobol-geracao-sql-exec/SKILL.md"
+  },
+  "skills/cobol-geracao-sql-exec/SKILL.md": {
+    "origem": "agents_skills/cobol/skills/cobol-geracao-sql-exec/SKILL_COBOL_GERACAO_SQL_EXEC.md"
+  },
+  "skills/cobol-otimizacao-performance/references/playbook-OTIMIZACAO_PERFORMANCE.md": {
+    "origem": "playbook/fase5_modernizacao_legado/2_depuracao_otimizacao/OTIMIZACAO_PERFORMANCE.md",
+    "dona": "skills/cobol-otimizacao-performance/SKILL.md"
+  },
+  "skills/cobol-otimizacao-performance/SKILL.md": {
+    "origem": "agents_skills/cobol/skills/cobol-otimizacao-performance/SKILL_COBOL_OTIMIZACAO_PERFORMANCE.md"
+  },
+  "skills/cobol-refatoracao/references/playbook-REFATORACAO_CODIGO.md": {
+    "origem": "playbook/fase5_modernizacao_legado/4_modernizacao_integracao/REFATORACAO_CODIGO.md",
+    "dona": "skills/cobol-refatoracao/SKILL.md"
+  },
+  "skills/cobol-refatoracao/SKILL.md": {
+    "origem": "agents_skills/cobol/skills/cobol-refatoracao/SKILL_COBOL_REFATORACAO.md"
+  },
+  "skills/cobol-reversa-completa/references/playbook-FASE5_REVERSA_COMPLETA_COBOL.md": {
+    "origem": "playbook/fase5_modernizacao_legado/1_compreensao_documentacao/FASE5_REVERSA_COMPLETA_COBOL.md",
+    "dona": "skills/cobol-reversa-completa/SKILL.md"
+  },
+  "skills/cobol-reversa-completa/SKILL.md": {
+    "origem": "agents_skills/cobol/skills/cobol-reversa-completa/SKILL_COBOL_REVERSA_COMPLETA.md"
+  },
+  "skills/cobol-teste-borda/references/playbook-TESTE_DE_BORDA.md": {
+    "origem": "playbook/fase5_modernizacao_legado/3_geracao_e_testes/TESTE_DE_BORDA.md",
+    "dona": "skills/cobol-teste-borda/SKILL.md"
+  },
+  "skills/cobol-teste-borda/SKILL.md": {
+    "origem": "agents_skills/cobol/skills/cobol-teste-borda/SKILL_COBOL_TESTE_BORDA.md"
+  },
+  "skills/cobol-transpilacao-java/references/playbook-TRANSPILACAO_LINGUAGEM.md": {
+    "origem": "playbook/fase5_modernizacao_legado/4_modernizacao_integracao/TRANSPILACAO_LINGUAGEM.md",
+    "dona": "skills/cobol-transpilacao-java/SKILL.md"
+  },
+  "skills/cobol-transpilacao-java/SKILL.md": {
+    "origem": "agents_skills/cobol/skills/cobol-transpilacao-java/SKILL_COBOL_TRANSPILACAO_JAVA.md"
+  },
+  "skills/fase-qa-automation-angular/SKILL.md": {
+    "origem": "sdd/angular/foursys-qa-automation.md"
+  },
+  "skills/fase-qa-automation-spring/SKILL.md": {
+    "origem": "sdd/spring_boot/foursys-qa-automation.md"
+  },
+  "skills/fase-qa-automation/SKILL.md": {
+    "origem": "sdd/generic/foursys-qa-automation.md"
+  },
+  "skills/fase-qa-coverage/SKILL.md": {
+    "origem": "sdd/generic/foursys-qa-coverage.md"
+  },
+  "skills/fase-qa-report/SKILL.md": {
+    "origem": "sdd/generic/foursys-qa-report.md"
+  },
+  "skills/fase-qa-test-cases-angular/SKILL.md": {
+    "origem": "sdd/angular/foursys-qa-test-cases.md"
+  },
+  "skills/fase-qa-test-cases-cobol/SKILL.md": {
+    "origem": "sdd/cobol/foursys-qa-test-cases.md"
+  },
+  "skills/fase-qa-test-cases-node/SKILL.md": {
+    "origem": "sdd/node/foursys-qa-test-cases.md"
+  },
+  "skills/fase-qa-test-cases-spring/SKILL.md": {
+    "origem": "sdd/spring_boot/foursys-qa-test-cases.md"
+  },
+  "skills/fase-qa-test-cases/SKILL.md": {
+    "origem": "sdd/generic/foursys-qa-test-cases.md"
+  },
+  "skills/fase-qa-test-plan-angular/SKILL.md": {
+    "origem": "sdd/angular/foursys-qa-test-plan.md"
+  },
+  "skills/fase-qa-test-plan-cobol/SKILL.md": {
+    "origem": "sdd/cobol/foursys-qa-test-plan.md"
+  },
+  "skills/fase-qa-test-plan-node/SKILL.md": {
+    "origem": "sdd/node/foursys-qa-test-plan.md"
+  },
+  "skills/fase-qa-test-plan-spring/SKILL.md": {
+    "origem": "sdd/spring_boot/foursys-qa-test-plan.md"
+  },
+  "skills/fase-qa-test-plan/SKILL.md": {
+    "origem": "sdd/generic/foursys-qa-test-plan.md"
+  },
+  "skills/foursys-constitution-android/SKILL.md": {
+    "origem": "sdd/android/foursys-constitution.md"
+  },
+  "skills/foursys-constitution-angular/SKILL.md": {
+    "origem": "sdd/angular/foursys-constitution.md"
+  },
+  "skills/foursys-constitution-cobol/SKILL.md": {
+    "origem": "sdd/cobol/foursys-constitution.md"
+  },
+  "skills/foursys-constitution-ios/SKILL.md": {
+    "origem": "sdd/ios/foursys-constitution.md"
+  },
+  "skills/foursys-constitution-node/SKILL.md": {
+    "origem": "sdd/node/foursys-constitution.md"
+  },
+  "skills/foursys-constitution-spring/SKILL.md": {
+    "origem": "sdd/spring_boot/foursys-constitution.md"
+  },
+  "skills/foursys-constitution/references/playbook-DIRETRIZES_SDD.md": {
+    "origem": "playbook/sdd/DIRETRIZES_SDD.md",
+    "dona": "skills/foursys-constitution/SKILL.md"
+  },
+  "skills/foursys-constitution/references/sdd-generic-foursys-constitution.md": {
+    "origem": "sdd/generic/foursys-constitution.md",
+    "dona": "skills/foursys-constitution/SKILL.md"
+  },
+  "skills/foursys-constitution/SKILL.md": {
+    "origem": "playbook/sdd/foursys-constitution.md"
+  },
+  "skills/foursys-plan-android/SKILL.md": {
+    "origem": "sdd/android/foursys-plan.md"
+  },
+  "skills/foursys-plan-angular/SKILL.md": {
+    "origem": "sdd/angular/foursys-plan.md"
+  },
+  "skills/foursys-plan-cobol/SKILL.md": {
+    "origem": "sdd/cobol/foursys-plan.md"
+  },
+  "skills/foursys-plan-ios/SKILL.md": {
+    "origem": "sdd/ios/foursys-plan.md"
+  },
+  "skills/foursys-plan-node/SKILL.md": {
+    "origem": "sdd/node/foursys-plan.md"
+  },
+  "skills/foursys-plan-spring/SKILL.md": {
+    "origem": "sdd/spring_boot/foursys-plan.md"
+  },
+  "skills/foursys-plan/SKILL.md": {
+    "origem": "sdd/generic/foursys-plan.md"
+  },
+  "skills/foursys-specify-tech-android/SKILL.md": {
+    "origem": "sdd/android/foursys-specify-tech.md"
+  },
+  "skills/foursys-specify-tech-angular/SKILL.md": {
+    "origem": "sdd/angular/foursys-specify-tech.md"
+  },
+  "skills/foursys-specify-tech-cobol/SKILL.md": {
+    "origem": "sdd/cobol/foursys-specify-tech.md"
+  },
+  "skills/foursys-specify-tech-ios/SKILL.md": {
+    "origem": "sdd/ios/foursys-specify-tech.md"
+  },
+  "skills/foursys-specify-tech-node/SKILL.md": {
+    "origem": "sdd/node/foursys-specify-tech.md"
+  },
+  "skills/foursys-specify-tech-spring/SKILL.md": {
+    "origem": "sdd/spring_boot/foursys-specify-tech.md"
+  },
+  "skills/foursys-specify/SKILL.md": {
+    "origem": "sdd/generic/foursys-specify.md"
+  },
+  "skills/foursys-tasks-angular/SKILL.md": {
+    "origem": "sdd/angular/foursys-tasks.md"
+  },
+  "skills/foursys-tasks-spring/SKILL.md": {
+    "origem": "sdd/spring_boot/foursys-tasks.md"
+  },
+  "skills/java-legado-discovery/SKILL.md": {
+    "origem": "agents_skills/java-legado/skills/java-legado-discovery/SKILL_JAVA_LEGADO_DISCOVERY.md"
+  },
+  "skills/java-legado-docg-discovery/SKILL.md": {
+    "origem": "agents_skills/java-legado/skills/java-legado-docg-discovery/SKILL_JAVA_LEGADO_DOCG_DISCOVERY.md"
+  },
+  "skills/java-legado-impact-analysis/SKILL.md": {
+    "origem": "agents_skills/java-legado/skills/java-legado-impact-analysis/SKILL_JAVA_LEGADO_IMPACT_ANALYSIS.md"
+  },
+  "skills/qa-test-data-generation/SKILL.md": {
+    "origem": "agents_skills/quality-assurance/qa-test-data-generation/0.1.0/SKILL.md"
+  },
+  "skills/sdd-tasks/references/playbook-foursys-tasks.md": {
+    "origem": "playbook/sdd/foursys-tasks.md",
+    "dona": "skills/sdd-tasks/SKILL.md"
+  },
+  "skills/sdd-tasks/references/sdd-generic-foursys-tasks.md": {
+    "origem": "sdd/generic/foursys-tasks.md",
+    "dona": "skills/sdd-tasks/SKILL.md"
+  },
+  "skills/skill-analyze-project/SKILL.md": {
+    "origem": "agents_skills/shared/skills/analyze-project/SKILL_ANALYZE_PROJECT.md"
+  },
+  "skills/skill-android-architecture/SKILL.md": {
+    "origem": "agents_skills/android/skills/android-architecture/SKILL_ANDROID_ARCHITECTURE.md"
+  },
+  "skills/skill-android-compose/SKILL.md": {
+    "origem": "agents_skills/android/skills/android-compose/SKILL_ANDROID_COMPOSE.md"
+  },
+  "skills/skill-android-di-custom/SKILL.md": {
+    "origem": "agents_skills/android/skills/android-di-custom/SKILL_ANDROID_DI_CUSTOM.md"
+  },
+  "skills/skill-android-feature-scaffold/SKILL.md": {
+    "origem": "agents_skills/android/skills/android-feature-scaffold/SKILL_ANDROID_FEATURE_SCAFFOLD.md"
+  },
+  "skills/skill-android-mvi/SKILL.md": {
+    "origem": "agents_skills/android/skills/android-mvi/SKILL_ANDROID_MVI.md"
+  },
+  "skills/skill-android-networking/SKILL.md": {
+    "origem": "agents_skills/android/skills/android-networking/SKILL_ANDROID_NETWORKING.md"
+  },
+  "skills/skill-android-persistence/SKILL.md": {
+    "origem": "agents_skills/android/skills/android-persistence/SKILL_ANDROID_PERSISTENCE.md"
+  },
+  "skills/skill-android-routes/SKILL.md": {
+    "origem": "agents_skills/android/skills/android-routes/SKILL_ANDROID_ROUTES.md"
+  },
+  "skills/skill-android-testing/SKILL.md": {
+    "origem": "agents_skills/android/skills/android-testing/SKILL_ANDROID_TESTING.md"
+  },
+  "skills/skill-angular-component/references/ATTRIBUTE_DIRECTIVES.md": {
+    "origem": "agents_skills/angular/skills/angular-component/references/ATTRIBUTE_DIRECTIVES.md"
+  },
+  "skills/skill-angular-component/references/COMPONENT_COMMUNICATION.md": {
+    "origem": "agents_skills/angular/skills/angular-component/references/COMPONENT_COMMUNICATION.md"
+  },
+  "skills/skill-angular-component/references/COMPONENT_DEPENDENCY_INJECTION.md": {
+    "origem": "agents_skills/angular/skills/angular-component/references/COMPONENT_DEPENDENCY_INJECTION.md"
+  },
+  "skills/skill-angular-component/references/DYNAMIC_COMPONENTS.md": {
+    "origem": "agents_skills/angular/skills/angular-component/references/DYNAMIC_COMPONENTS.md"
+  },
+  "skills/skill-angular-component/references/ERROR_BOUNDARIES.md": {
+    "origem": "agents_skills/angular/skills/angular-component/references/ERROR_BOUNDARIES.md"
+  },
+  "skills/skill-angular-component/references/MODEL_INPUTS.md": {
+    "origem": "agents_skills/angular/skills/angular-component/references/MODEL_INPUTS.md"
+  },
+  "skills/skill-angular-component/references/README.md": {
+    "origem": "agents_skills/angular/skills/angular-component/README.md"
+  },
+  "skills/skill-angular-component/references/SIGNAL_QUERIES.md": {
+    "origem": "agents_skills/angular/skills/angular-component/references/SIGNAL_QUERIES.md"
+  },
+  "skills/skill-angular-component/SKILL.md": {
+    "origem": "agents_skills/angular/skills/angular-component/SKILL_ANGULAR_COMPONENT.md"
+  },
+  "skills/skill-angular-design-system/references/android-liquid.md": {
+    "origem": "design-systems/android-liquid.md"
+  },
+  "skills/skill-angular-design-system/references/bootstrap.md": {
+    "origem": "design-systems/bootstrap.md"
+  },
+  "skills/skill-angular-design-system/references/bradesco-liquid.md": {
+    "origem": "design-systems/bradesco-liquid.md"
+  },
+  "skills/skill-angular-design-system/references/bradesco-seguros-bsds.md": {
+    "origem": "design-systems/bradesco-seguros-bsds.md"
+  },
+  "skills/skill-angular-design-system/references/ios-liquid.md": {
+    "origem": "design-systems/ios-liquid.md"
+  },
+  "skills/skill-angular-design-system/references/material.md": {
+    "origem": "design-systems/material.md"
+  },
+  "skills/skill-angular-design-system/references/primeng.md": {
+    "origem": "design-systems/primeng.md"
+  },
+  "skills/skill-angular-design-system/references/tailwind.md": {
+    "origem": "design-systems/tailwind.md"
+  },
+  "skills/skill-angular-design-system/SKILL.md": {
+    "origem": "agents_skills/angular/skills/angular-design-system/SKILL.md"
+  },
+  "skills/skill-angular-di/references/ABSTRACT_CLASSES_AS_TOKENS.md": {
+    "origem": "agents_skills/angular/skills/angular-di/references/ABSTRACT_CLASSES_AS_TOKENS.md"
+  },
+  "skills/skill-angular-di/references/DESTROYREF_AND_CLEANUP.md": {
+    "origem": "agents_skills/angular/skills/angular-di/references/DESTROYREF_AND_CLEANUP.md"
+  },
+  "skills/skill-angular-di/references/DYNAMIC_PROVIDERS.md": {
+    "origem": "agents_skills/angular/skills/angular-di/references/DYNAMIC_PROVIDERS.md"
+  },
+  "skills/skill-angular-di/references/HIERARCHICAL_INJECTION.md": {
+    "origem": "agents_skills/angular/skills/angular-di/references/HIERARCHICAL_INJECTION.md"
+  },
+  "skills/skill-angular-di/references/INJECTION_CONTEXT_UTILITIES.md": {
+    "origem": "agents_skills/angular/skills/angular-di/references/INJECTION_CONTEXT_UTILITIES.md"
+  },
+  "skills/skill-angular-di/references/SERVICE_PATTERNS.md": {
+    "origem": "agents_skills/angular/skills/angular-di/references/SERVICE_PATTERNS.md"
+  },
+  "skills/skill-angular-di/references/TESTING_WITH_DI.md": {
+    "origem": "agents_skills/angular/skills/angular-di/references/TESTING_WITH_DI.md"
+  },
+  "skills/skill-angular-di/SKILL.md": {
+    "origem": "agents_skills/angular/skills/angular-di/SKILL_ANGULAR_DI.md"
+  },
+  "skills/skill-angular-directives/references/DIRECTIVE_PATTERNS.md": {
+    "origem": "agents_skills/angular/skills/angular-directives/references/DIRECTIVE_PATTERNS.md"
+  },
+  "skills/skill-angular-directives/references/DOM_MANIPULATION.md": {
+    "origem": "agents_skills/angular/skills/angular-directives/references/DOM_MANIPULATION.md"
+  },
+  "skills/skill-angular-directives/references/DRAG_AND_DROP.md": {
+    "origem": "agents_skills/angular/skills/angular-directives/references/DRAG_AND_DROP.md"
+  },
+  "skills/skill-angular-directives/references/EXPORT_DIRECTIVE_REFERENCE.md": {
+    "origem": "agents_skills/angular/skills/angular-directives/references/EXPORT_DIRECTIVE_REFERENCE.md"
+  },
+  "skills/skill-angular-directives/references/FORM_DIRECTIVES.md": {
+    "origem": "agents_skills/angular/skills/angular-directives/references/FORM_DIRECTIVES.md"
+  },
+  "skills/skill-angular-directives/references/INTERSECTION_OBSERVER.md": {
+    "origem": "agents_skills/angular/skills/angular-directives/references/INTERSECTION_OBSERVER.md"
+  },
+  "skills/skill-angular-directives/references/PERMISSION_DIRECTIVE.md": {
+    "origem": "agents_skills/angular/skills/angular-directives/references/PERMISSION_DIRECTIVE.md"
+  },
+  "skills/skill-angular-directives/references/RESIZE_OBSERVER.md": {
+    "origem": "agents_skills/angular/skills/angular-directives/references/RESIZE_OBSERVER.md"
+  },
+  "skills/skill-angular-directives/SKILL.md": {
+    "origem": "agents_skills/angular/skills/angular-directives/SKILL_ANGULAR_DIRECTIVES.md"
+  },
+  "skills/skill-angular-forms/references/CUSTOM_VALIDATORS.md": {
+    "origem": "agents_skills/angular/skills/angular-forms/references/CUSTOM_VALIDATORS.md"
+  },
+  "skills/skill-angular-forms/references/DYNAMIC_FORMS.md": {
+    "origem": "agents_skills/angular/skills/angular-forms/references/DYNAMIC_FORMS.md"
+  },
+  "skills/skill-angular-forms/references/ERROR_DISPLAY.md": {
+    "origem": "agents_skills/angular/skills/angular-forms/references/ERROR_DISPLAY.md"
+  },
+  "skills/skill-angular-forms/references/FORM_STATE_MANAGEMENT.md": {
+    "origem": "agents_skills/angular/skills/angular-forms/references/FORM_STATE_MANAGEMENT.md"
+  },
+  "skills/skill-angular-forms/references/FORM_SUBMISSION.md": {
+    "origem": "agents_skills/angular/skills/angular-forms/references/FORM_SUBMISSION.md"
+  },
+  "skills/skill-angular-forms/references/FORMBUILDER_PATTERNS.md": {
+    "origem": "agents_skills/angular/skills/angular-forms/references/FORMBUILDER_PATTERNS.md"
+  },
+  "skills/skill-angular-forms/references/REACTIVE_FORMS.md": {
+    "origem": "agents_skills/angular/skills/angular-forms/references/REACTIVE_FORMS.md"
+  },
+  "skills/skill-angular-forms/references/TYPED_REACTIVE_FORMS.md": {
+    "origem": "agents_skills/angular/skills/angular-forms/references/TYPED_REACTIVE_FORMS.md"
+  },
+  "skills/skill-angular-forms/SKILL.md": {
+    "origem": "agents_skills/angular/skills/angular-forms/SKILL_ANGULAR_FORMS.md"
+  },
+  "skills/skill-angular-http/references/CACHING_STRATEGIES.md": {
+    "origem": "agents_skills/angular/skills/angular-http/references/CACHING_STRATEGIES.md"
+  },
+  "skills/skill-angular-http/references/FILE_UPLOAD.md": {
+    "origem": "agents_skills/angular/skills/angular-http/references/FILE_UPLOAD.md"
+  },
+  "skills/skill-angular-http/references/PAGINATION.md": {
+    "origem": "agents_skills/angular/skills/angular-http/references/PAGINATION.md"
+  },
+  "skills/skill-angular-http/references/REQUEST_CANCELLATION.md": {
+    "origem": "agents_skills/angular/skills/angular-http/references/REQUEST_CANCELLATION.md"
+  },
+  "skills/skill-angular-http/references/SERVICE_LAYER.md": {
+    "origem": "agents_skills/angular/skills/angular-http/references/SERVICE_LAYER.md"
+  },
+  "skills/skill-angular-http/references/TESTING_HTTP.md": {
+    "origem": "agents_skills/angular/skills/angular-http/references/TESTING_HTTP.md"
+  },
+  "skills/skill-angular-http/SKILL.md": {
+    "origem": "agents_skills/angular/skills/angular-http/SKILL_ANGULAR_HTTP.md"
+  },
+  "skills/skill-angular-review/references/playbook-FASE3_REVIEW_ANGULAR.md": {
+    "origem": "playbook/fase3_portoes_qualidade/FASE3_REVIEW_ANGULAR.md",
+    "dona": "skills/skill-angular-review/SKILL.md"
+  },
+  "skills/skill-angular-review/SKILL.md": {
+    "origem": "agents_skills/angular/skills/angular-review/SKILL_ANGULAR_REVIEW.md"
+  },
+  "skills/skill-angular-routing/references/AUTHENTICATION_FLOW.md": {
+    "origem": "agents_skills/angular/skills/angular-routing/references/AUTHENTICATION_FLOW.md"
+  },
+  "skills/skill-angular-routing/references/BREADCRUMBS.md": {
+    "origem": "agents_skills/angular/skills/angular-routing/references/BREADCRUMBS.md"
+  },
+  "skills/skill-angular-routing/references/MODAL_ROUTES.md": {
+    "origem": "agents_skills/angular/skills/angular-routing/references/MODAL_ROUTES.md"
+  },
+  "skills/skill-angular-routing/references/PRELOADING_STRATEGIES.md": {
+    "origem": "agents_skills/angular/skills/angular-routing/references/PRELOADING_STRATEGIES.md"
+  },
+  "skills/skill-angular-routing/references/ROUTE_ANIMATIONS.md": {
+    "origem": "agents_skills/angular/skills/angular-routing/references/ROUTE_ANIMATIONS.md"
+  },
+  "skills/skill-angular-routing/references/ROUTE_CONFIGURATION_OPTIONS.md": {
+    "origem": "agents_skills/angular/skills/angular-routing/references/ROUTE_CONFIGURATION_OPTIONS.md"
+  },
+  "skills/skill-angular-routing/references/SCROLL_POSITION_RESTORATION.md": {
+    "origem": "agents_skills/angular/skills/angular-routing/references/SCROLL_POSITION_RESTORATION.md"
+  },
+  "skills/skill-angular-routing/references/TAB_NAVIGATION.md": {
+    "origem": "agents_skills/angular/skills/angular-routing/references/TAB_NAVIGATION.md"
+  },
+  "skills/skill-angular-routing/SKILL.md": {
+    "origem": "agents_skills/angular/skills/angular-routing/SKILL_ANGULAR_ROUTING.md"
+  },
+  "skills/skill-angular-signals/references/ASYNC_OPERATIONS.md": {
+    "origem": "agents_skills/angular/skills/angular-signals/references/ASYNC_OPERATIONS.md"
+  },
+  "skills/skill-angular-signals/references/FORM_STATE.md": {
+    "origem": "agents_skills/angular/skills/angular-signals/references/FORM_STATE.md"
+  },
+  "skills/skill-angular-signals/references/RESOURCE_API.md": {
+    "origem": "agents_skills/angular/skills/angular-signals/references/RESOURCE_API.md"
+  },
+  "skills/skill-angular-signals/references/SIGNAL_STORE_PATTERN.md": {
+    "origem": "agents_skills/angular/skills/angular-signals/references/SIGNAL_STORE_PATTERN.md"
+  },
+  "skills/skill-angular-signals/references/TESTING_SIGNALS.md": {
+    "origem": "agents_skills/angular/skills/angular-signals/references/TESTING_SIGNALS.md"
+  },
+  "skills/skill-angular-signals/SKILL.md": {
+    "origem": "agents_skills/angular/skills/angular-signals/SKILL_ANGULAR_SIGNALS.md"
+  },
+  "skills/skill-angular-testes/references/playbook-FASE3_TESTES_ANGULAR.md": {
+    "origem": "playbook/fase3_portoes_qualidade/FASE3_TESTES_ANGULAR.md",
+    "dona": "skills/skill-angular-testes/SKILL.md"
+  },
+  "skills/skill-angular-testes/SKILL.md": {
+    "origem": "agents_skills/angular/skills/angular-testes/SKILL_ANGULAR_TESTES.md"
+  },
+  "skills/skill-angular-testing/references/COMPONENT_HARNESSES.md": {
+    "origem": "agents_skills/angular/skills/angular-testing/references/COMPONENT_HARNESSES.md"
+  },
+  "skills/skill-angular-testing/references/E2E_TESTING_SETUP.md": {
+    "origem": "agents_skills/angular/skills/angular-testing/references/E2E_TESTING_SETUP.md"
+  },
+  "skills/skill-angular-testing/references/TEST_UTILITIES.md": {
+    "origem": "agents_skills/angular/skills/angular-testing/references/TEST_UTILITIES.md"
+  },
+  "skills/skill-angular-testing/references/TESTING_DIRECTIVES.md": {
+    "origem": "agents_skills/angular/skills/angular-testing/references/TESTING_DIRECTIVES.md"
+  },
+  "skills/skill-angular-testing/references/TESTING_FORMS.md": {
+    "origem": "agents_skills/angular/skills/angular-testing/references/TESTING_FORMS.md"
+  },
+  "skills/skill-angular-testing/references/TESTING_PIPES.md": {
+    "origem": "agents_skills/angular/skills/angular-testing/references/TESTING_PIPES.md"
+  },
+  "skills/skill-angular-testing/references/TESTING_ROUTER.md": {
+    "origem": "agents_skills/angular/skills/angular-testing/references/TESTING_ROUTER.md"
+  },
+  "skills/skill-angular-testing/references/VITEST_ADVANCED_PATTERNS.md": {
+    "origem": "agents_skills/angular/skills/angular-testing/references/VITEST_ADVANCED_PATTERNS.md"
+  },
+  "skills/skill-angular-testing/SKILL.md": {
+    "origem": "agents_skills/angular/skills/angular-testing/SKILL_ANGULAR_TESTING.md"
+  },
+  "skills/skill-angular-tooling/references/BUILD_OPTIMIZATION.md": {
+    "origem": "agents_skills/angular/skills/angular-tooling/references/BUILD_OPTIMIZATION.md"
+  },
+  "skills/skill-angular-tooling/references/CUSTOM_BUILDERS.md": {
+    "origem": "agents_skills/angular/skills/angular-tooling/references/CUSTOM_BUILDERS.md"
+  },
+  "skills/skill-angular-tooling/references/CUSTOM_SCHEMATICS.md": {
+    "origem": "agents_skills/angular/skills/angular-tooling/references/CUSTOM_SCHEMATICS.md"
+  },
+  "skills/skill-angular-tooling/references/DEBUGGING.md": {
+    "origem": "agents_skills/angular/skills/angular-tooling/references/DEBUGGING.md"
+  },
+  "skills/skill-angular-tooling/references/MULTI_PROJECT_WORKSPACE.md": {
+    "origem": "agents_skills/angular/skills/angular-tooling/references/MULTI_PROJECT_WORKSPACE.md"
+  },
+  "skills/skill-angular-tooling/references/PACKAGE_SCRIPTS.md": {
+    "origem": "agents_skills/angular/skills/angular-tooling/references/PACKAGE_SCRIPTS.md"
+  },
+  "skills/skill-angular-tooling/references/PATH_ALIASES.md": {
+    "origem": "agents_skills/angular/skills/angular-tooling/references/PATH_ALIASES.md"
+  },
+  "skills/skill-angular-tooling/references/PROXY_CONFIGURATION.md": {
+    "origem": "agents_skills/angular/skills/angular-tooling/references/PROXY_CONFIGURATION.md"
+  },
+  "skills/skill-angular-tooling/SKILL.md": {
+    "origem": "agents_skills/angular/skills/angular-tooling/SKILL_ANGULAR_TOOLING.md"
+  },
+  "skills/skill-angular-vertical-slice/SKILL.md": {
+    "origem": "agents_skills/angular/skills/angular-vertical-slice/SKILL_ANGULAR_VERTICAL_SLICE.md"
+  },
+  "skills/skill-certificado-ssl-local/SKILL.md": {
+    "origem": "agents_skills/shared/skills/certificado-ssl-local/SKILL_CERTIFICADO_SSL_LOCAL.md"
+  },
+  "skills/skill-checklist-homologacao/references/playbook-FASE4_CHECKLIST_HOMOLOGACAO.md": {
+    "origem": "playbook/fase4_homologacao_entrega/FASE4_CHECKLIST_HOMOLOGACAO.md",
+    "dona": "skills/skill-checklist-homologacao/SKILL.md"
+  },
+  "skills/skill-checklist-homologacao/SKILL.md": {
+    "origem": "agents_skills/shared/skills/checklist-homologacao/SKILL_CHECKLIST_HOMOLOGACAO.md"
+  },
+  "skills/skill-code-review/SKILL.md": {
+    "origem": "agents_skills/shared/skills/code-review/SKILL_CODE_REVIEW.md"
+  },
+  "skills/skill-diagrama-sequencia/references/playbook-FASE0_DIAGRAMA_SEQUENCIA_ARQUITETURA.md": {
+    "origem": "playbook/fase0_descoberta_arquitetura/FASE0_DIAGRAMA_SEQUENCIA_ARQUITETURA.md",
+    "dona": "skills/skill-diagrama-sequencia/SKILL.md"
+  },
+  "skills/skill-diagrama-sequencia/SKILL.md": {
+    "origem": "agents_skills/shared/skills/diagrama-sequencia/SKILL_DIAGRAMA_SEQUENCIA.md"
+  },
+  "skills/skill-especificacao-tecnica/references/playbook-FASE2_ESPECIFICACAO_TECNICA.md": {
+    "origem": "playbook/fase2_desenho_tecnico/FASE2_ESPECIFICACAO_TECNICA.md",
+    "dona": "skills/skill-especificacao-tecnica/SKILL.md"
+  },
+  "skills/skill-especificacao-tecnica/SKILL.md": {
+    "origem": "agents_skills/shared/skills/especificacao-tecnica/SKILL_ESPECIFICACAO_TECNICA.md"
+  },
+  "skills/skill-ios-analytics-bnj/SKILL.md": {
+    "origem": "agents_skills/ios/skills/ios-analytics-bnj/SKILL_IOS_ANALYTICS_BNJ.md"
+  },
+  "skills/skill-ios-architecture-bnj/SKILL.md": {
+    "origem": "agents_skills/ios/skills/ios-architecture-bnj/SKILL_IOS_ARCHITECTURE_BNJ.md"
+  },
+  "skills/skill-ios-architecture/SKILL.md": {
+    "origem": "agents_skills/ios/skills/ios-architecture/SKILL_IOS_ARCHITECTURE.md"
+  },
+  "skills/skill-ios-feature-scaffold-bnj/SKILL.md": {
+    "origem": "agents_skills/ios/skills/ios-feature-scaffold-bnj/SKILL_IOS_FEATURE_SCAFFOLD_BNJ.md"
+  },
+  "skills/skill-ios-networking/SKILL.md": {
+    "origem": "agents_skills/ios/skills/ios-networking/SKILL_IOS_NETWORKING.md"
+  },
+  "skills/skill-ios-persistence/SKILL.md": {
+    "origem": "agents_skills/ios/skills/ios-persistence/SKILL_IOS_PERSISTENCE.md"
+  },
+  "skills/skill-ios-router-bnj/SKILL.md": {
+    "origem": "agents_skills/ios/skills/ios-router-bnj/SKILL_IOS_ROUTER_BNJ.md"
+  },
+  "skills/skill-ios-testing/SKILL.md": {
+    "origem": "agents_skills/ios/skills/ios-testing/SKILL_IOS_TESTING.md"
+  },
+  "skills/skill-ios-usecase-bnj/SKILL.md": {
+    "origem": "agents_skills/ios/skills/ios-usecase-bnj/SKILL_IOS_USECASE_BNJ.md"
+  },
+  "skills/skill-ios-viewdata-dto/SKILL.md": {
+    "origem": "agents_skills/ios/skills/ios-viewdata-dto/SKILL_IOS_VIEWDATA_DTO.md"
+  },
+  "skills/skill-ios-viewmodel-bnj/SKILL.md": {
+    "origem": "agents_skills/ios/skills/ios-viewmodel-bnj/SKILL_IOS_VIEWMODEL_BNJ.md"
+  },
+  "skills/skill-mermaid-generator/SKILL.md": {
+    "origem": "agents_skills/shared/skills/mermaid-generator/SKILL_MERMAID_GENERATOR.md"
+  },
+  "skills/skill-playwright-bdd-feature-generation/SKILL.md": {
+    "origem": "agents_skills/shared/skills/playwright-bdd-feature-generation/SKILL_PLAYWRIGHT_BDD_FEATURE_GENERATION.md"
+  },
+  "skills/skill-po-apf-rules/references/cenarios-especiais.md": {
+    "origem": "agents_skills/product-owner/apf-rules/0.0.1/references/cenarios-especiais.md"
+  },
+  "skills/skill-po-apf-rules/references/checklist.md": {
+    "origem": "agents_skills/product-owner/apf-rules/0.0.1/references/checklist.md"
+  },
+  "skills/skill-po-apf-rules/references/exemplos-backend.md": {
+    "origem": "agents_skills/product-owner/apf-rules/0.0.1/references/exemplos-backend.md"
+  },
+  "skills/skill-po-apf-rules/references/exemplos.md": {
+    "origem": "agents_skills/product-owner/apf-rules/0.0.1/references/exemplos.md"
+  },
+  "skills/skill-po-apf-rules/references/regras-apf.md": {
+    "origem": "agents_skills/product-owner/apf-rules/0.0.1/references/regras-apf.md"
+  },
+  "skills/skill-po-apf-rules/SKILL.md": {
+    "origem": "agents_skills/product-owner/apf-rules/0.0.1/SKILL.md"
+  },
+  "skills/skill-po-bpmn-generator/references/business-bpmn-elements.md": {
+    "origem": "agents_skills/product-owner/bpmn-generator/references/business-bpmn-elements.md"
+  },
+  "skills/skill-po-bpmn-generator/references/decision-matrix.md": {
+    "origem": "agents_skills/product-owner/bpmn-generator/references/decision-matrix.md"
+  },
+  "skills/skill-po-bpmn-generator/references/file-conventions.md": {
+    "origem": "agents_skills/product-owner/bpmn-generator/references/file-conventions.md"
+  },
+  "skills/skill-po-bpmn-generator/references/modeling-workflow.md": {
+    "origem": "agents_skills/product-owner/bpmn-generator/references/modeling-workflow.md"
+  },
+  "skills/skill-po-bpmn-generator/SKILL.md": {
+    "origem": "agents_skills/product-owner/bpmn-generator/SKILL.md"
+  },
+  "skills/skill-po-bpmn-markdown/references/copyable-snippets.md": {
+    "origem": "agents_skills/product-owner/bpmn-markdown/references/copyable-snippets.md"
+  },
+  "skills/skill-po-bpmn-markdown/references/embedding-patterns.md": {
+    "origem": "agents_skills/product-owner/bpmn-markdown/references/embedding-patterns.md"
+  },
+  "skills/skill-po-bpmn-markdown/references/section-writing-guidance.md": {
+    "origem": "agents_skills/product-owner/bpmn-markdown/references/section-writing-guidance.md"
+  },
+  "skills/skill-po-bpmn-markdown/SKILL.md": {
+    "origem": "agents_skills/product-owner/bpmn-markdown/SKILL.md"
+  },
+  "skills/skill-po-business-reviewer/references/business-language-guardrails.md": {
+    "origem": "agents_skills/product-owner/business-reviewer/0.0.1/references/business-language-guardrails.md"
+  },
+  "skills/skill-po-business-reviewer/references/discovery-review-checklist.md": {
+    "origem": "agents_skills/product-owner/business-reviewer/0.0.1/references/discovery-review-checklist.md"
+  },
+  "skills/skill-po-business-reviewer/references/prd-review-checklist.md": {
+    "origem": "agents_skills/product-owner/business-reviewer/0.0.1/references/prd-review-checklist.md"
+  },
+  "skills/skill-po-business-reviewer/references/user-story-review-checklist.md": {
+    "origem": "agents_skills/product-owner/business-reviewer/0.0.1/references/user-story-review-checklist.md"
+  },
+  "skills/skill-po-business-reviewer/SKILL.md": {
+    "origem": "agents_skills/product-owner/business-reviewer/0.0.1/SKILL.md"
+  },
+  "skills/skill-po-discovery-facilitator/references/discovery-prompts.md": {
+    "origem": "agents_skills/product-owner/discovery-facilitator/0.0.1/references/discovery-prompts.md"
+  },
+  "skills/skill-po-discovery-facilitator/references/lean-inception-lite.md": {
+    "origem": "agents_skills/product-owner/discovery-facilitator/0.0.1/references/lean-inception-lite.md"
+  },
+  "skills/skill-po-discovery-facilitator/SKILL.md": {
+    "origem": "agents_skills/product-owner/discovery-facilitator/0.0.1/SKILL.md"
+  },
+  "skills/skill-po-gerar-user-story-de-prd/references/sdd-generic-foursys-po-stories.md": {
+    "origem": "sdd/generic/foursys-po-stories.md",
+    "dona": "skills/skill-po-gerar-user-story-de-prd/SKILL.md"
+  },
+  "skills/skill-po-gerar-user-story-de-prd/references/user-story-template.md": {
+    "origem": "agents_skills/product-owner/po-gerar-user-story/0.0.1/references/user-story-template.md"
+  },
+  "skills/skill-po-gerar-user-story-de-prd/SKILL.md": {
+    "origem": "agents_skills/product-owner/po-gerar-user-story/0.0.1/SKILL.md"
+  },
+  "skills/skill-po-gerar-user-story/references/tech-solution-template.md": {
+    "origem": "agents_skills/product-owner/gerar-user-story/0.0.1/references/tech-solution-template.md"
+  },
+  "skills/skill-po-gerar-user-story/SKILL.md": {
+    "origem": "agents_skills/product-owner/gerar-user-story/0.0.1/SKILL.md"
+  },
+  "skills/skill-po-iniciar-discovery/references/discovery-template.md": {
+    "origem": "agents_skills/product-owner/po-iniciar-discovery/0.0.1/references/discovery-template.md"
+  },
+  "skills/skill-po-iniciar-discovery/references/sdd-generic-foursys-po-discovery.md": {
+    "origem": "sdd/generic/foursys-po-discovery.md",
+    "dona": "skills/skill-po-iniciar-discovery/SKILL.md"
+  },
+  "skills/skill-po-iniciar-discovery/SKILL.md": {
+    "origem": "agents_skills/product-owner/po-iniciar-discovery/0.0.1/SKILL.md"
+  },
+  "skills/skill-po-markdown-to-confluence/SKILL.md": {
+    "origem": "agents_skills/product-owner/markdown-to-confluence/SKILL.md"
+  },
+  "skills/skill-po-markdown-to-jira/SKILL.md": {
+    "origem": "agents_skills/product-owner/markdown-to-jira/SKILL.md"
+  },
+  "skills/skill-po-mermaid-generator/references/versao-0.0.1.md": {
+    "origem": "agents_skills/product-owner/mermaid-generator/0.0.1/SKILL.md"
+  },
+  "skills/skill-po-mermaid-generator/SKILL.md": {
+    "origem": "agents_skills/product-owner/mermaid-generator/0.1.0/SKILL.md"
+  },
+  "skills/skill-po-quick-prd/SKILL.md": {
+    "origem": "agents_skills/product-owner/po-quick-prd/0.1.0/SKILL.md"
+  },
+  "skills/skill-po-refinar-negocio/references/handoff-template.md": {
+    "origem": "agents_skills/product-owner/po-refinar-negocio/0.0.1/references/handoff-template.md"
+  },
+  "skills/skill-po-refinar-negocio/references/prd-template.md": {
+    "origem": "agents_skills/product-owner/po-refinar-negocio/0.0.1/references/prd-template.md"
+  },
+  "skills/skill-po-refinar-negocio/references/sdd-generic-foursys-po-prd.md": {
+    "origem": "sdd/generic/foursys-po-prd.md",
+    "dona": "skills/skill-po-refinar-negocio/SKILL.md"
+  },
+  "skills/skill-po-refinar-negocio/SKILL.md": {
+    "origem": "agents_skills/product-owner/po-refinar-negocio/0.0.1/SKILL.md"
+  },
+  "skills/skill-po-technical-bridge/SKILL.md": {
+    "origem": "agents_skills/product-owner/po-technical-bridge/0.1.0/SKILL.md"
+  },
+  "skills/skill-refinamento-negocio/references/playbook-FASE1_REFINAMENTO_NEGOCIO.md": {
+    "origem": "playbook/fase1_refinamento_negocio/FASE1_REFINAMENTO_NEGOCIO.md",
+    "dona": "skills/skill-refinamento-negocio/SKILL.md"
+  },
+  "skills/skill-refinamento-negocio/SKILL.md": {
+    "origem": "agents_skills/shared/skills/refinamento-negocio/SKILL_REFINAMENTO_NEGOCIO.md"
+  },
+  "skills/skill-springboot-autorizador/SKILL.md": {
+    "origem": "agents_skills/spring_boot/skills/springboot-autorizador/SKILL_SPRINGBOOT_AUTORIZADOR.md"
+  },
+  "skills/skill-springboot-blob-storage/SKILL.md": {
+    "origem": "agents_skills/spring_boot/skills/springboot-blob-storage/SKILL_SPRINGBOOT_BLOB_STORAGE.md"
+  },
+  "skills/skill-springboot-certificado-impl/SKILL.md": {
+    "origem": "agents_skills/spring_boot/skills/springboot-certificado-impl/SKILL_SPRINGBOOT_CERTIFICADO_IMPL.md"
+  },
+  "skills/skill-springboot-certificado/SKILL.md": {
+    "origem": "agents_skills/spring_boot/skills/springboot-certificado/SKILL_SPRINGBOOT_CERTIFICADO.md"
+  },
+  "skills/skill-springboot-feign-client/references/HEXAGONAL_FEIGN_INTEGRATION.md": {
+    "origem": "agents_skills/spring_boot/skills/springboot-feign-client/references/HEXAGONAL_FEIGN_INTEGRATION.md"
+  },
+  "skills/skill-springboot-feign-client/references/MVC_FEIGN_INTEGRATION.md": {
+    "origem": "agents_skills/spring_boot/skills/springboot-feign-client/references/MVC_FEIGN_INTEGRATION.md"
+  },
+  "skills/skill-springboot-feign-client/references/README.md": {
+    "origem": "agents_skills/spring_boot/skills/springboot-feign-client/README.md"
+  },
+  "skills/skill-springboot-feign-client/SKILL.md": {
+    "origem": "agents_skills/spring_boot/skills/springboot-feign-client/SKILL_SPRINGBOOT_FEIGN_CLIENT.md"
+  },
+  "skills/skill-springboot-kafka/references/KAFKA_CONSUMER_INTEGRATION.md": {
+    "origem": "agents_skills/spring_boot/skills/springboot-kafka/references/KAFKA_CONSUMER_INTEGRATION.md"
+  },
+  "skills/skill-springboot-kafka/references/KAFKA_PRODUCER_INTEGRATION.md": {
+    "origem": "agents_skills/spring_boot/skills/springboot-kafka/references/KAFKA_PRODUCER_INTEGRATION.md"
+  },
+  "skills/skill-springboot-kafka/references/README.md": {
+    "origem": "agents_skills/spring_boot/skills/springboot-kafka/README.md"
+  },
+  "skills/skill-springboot-kafka/SKILL.md": {
+    "origem": "agents_skills/spring_boot/skills/springboot-kafka/SKILL_SPRINGBOOT_KAFKA.md"
+  },
+  "skills/skill-springboot-mongodb/references/MONGODB_PAGINATION.md": {
+    "origem": "agents_skills/spring_boot/skills/springboot-mongodb/references/MONGODB_PAGINATION.md"
+  },
+  "skills/skill-springboot-mongodb/references/MONGODB_QUERY_METHODS.md": {
+    "origem": "agents_skills/spring_boot/skills/springboot-mongodb/references/MONGODB_QUERY_METHODS.md"
+  },
+  "skills/skill-springboot-mongodb/references/MONGODB_REPOSITORY_INTEGRATION.md": {
+    "origem": "agents_skills/spring_boot/skills/springboot-mongodb/references/MONGODB_REPOSITORY_INTEGRATION.md"
+  },
+  "skills/skill-springboot-mongodb/references/MONGODB_TEMPLATE_USAGE.md": {
+    "origem": "agents_skills/spring_boot/skills/springboot-mongodb/references/MONGODB_TEMPLATE_USAGE.md"
+  },
+  "skills/skill-springboot-mongodb/references/MONGODB_TRANSACTIONS.md": {
+    "origem": "agents_skills/spring_boot/skills/springboot-mongodb/references/MONGODB_TRANSACTIONS.md"
+  },
+  "skills/skill-springboot-mongodb/references/README.md": {
+    "origem": "agents_skills/spring_boot/skills/springboot-mongodb/README.md"
+  },
+  "skills/skill-springboot-mongodb/SKILL.md": {
+    "origem": "agents_skills/spring_boot/skills/springboot-mongodb/SKILL_SPRINGBOOT_MONGODB.md"
+  },
+  "skills/skill-springboot-redis/SKILL.md": {
+    "origem": "agents_skills/spring_boot/skills/springboot-redis/SKILL_SPRINGBOOT_REDIS.md"
+  },
+  "skills/skill-springboot-rest-client/references/README.md": {
+    "origem": "agents_skills/spring_boot/skills/springboot-rest-client/README.md"
+  },
+  "skills/skill-springboot-rest-client/SKILL.md": {
+    "origem": "agents_skills/spring_boot/skills/springboot-rest-client/SKILL_SPRINGBOOT_REST_CLIENT.md"
+  },
+  "skills/skill-springboot-review/references/playbook-FASE3_REVIEW_SPRING.md": {
+    "origem": "playbook/fase3_portoes_qualidade/FASE3_REVIEW_SPRING.md",
+    "dona": "skills/skill-springboot-review/SKILL.md"
+  },
+  "skills/skill-springboot-review/SKILL.md": {
+    "origem": "agents_skills/spring_boot/skills/springboot-review/SKILL_SPRINGBOOT_REVIEW.md"
+  },
+  "skills/skill-springboot-service-bus/SKILL.md": {
+    "origem": "agents_skills/spring_boot/skills/springboot-service-bus/SKILL_SPRINGBOOT_SERVICE_BUS.md"
+  },
+  "skills/skill-springboot-testes-junit5/references/playbook-FASE3_TESTES_SPRING.md": {
+    "origem": "playbook/fase3_portoes_qualidade/FASE3_TESTES_SPRING.md",
+    "dona": "skills/skill-springboot-testes-junit5/SKILL.md"
+  },
+  "skills/skill-springboot-testes-junit5/SKILL.md": {
+    "origem": "agents_skills/spring_boot/skills/springboot-testes-junit5/SKILL_SPRINGBOOT_TESTES_JUNIT5.md"
+  },
+  "skills/skill-springboot-testing/references/ADAPTER_TESTING.md": {
+    "origem": "agents_skills/spring_boot/skills/springboot-testing/references/ADAPTER_TESTING.md"
+  },
+  "skills/skill-springboot-testing/references/ADVANCED_PATTERNS.md": {
+    "origem": "agents_skills/spring_boot/skills/springboot-testing/references/ADVANCED_PATTERNS.md"
+  },
+  "skills/skill-springboot-testing/references/DOMAIN_TESTING.md": {
+    "origem": "agents_skills/spring_boot/skills/springboot-testing/references/DOMAIN_TESTING.md"
+  },
+  "skills/skill-springboot-testing/references/README.md": {
+    "origem": "agents_skills/spring_boot/skills/springboot-testing/README.md"
+  },
+  "skills/skill-springboot-testing/references/TESTING_CHECKLIST.md": {
+    "origem": "agents_skills/spring_boot/skills/springboot-testing/references/TESTING_CHECKLIST.md"
+  },
+  "skills/skill-springboot-testing/references/USECASE_TESTING.md": {
+    "origem": "agents_skills/spring_boot/skills/springboot-testing/references/USECASE_TESTING.md"
+  },
+  "skills/skill-springboot-testing/SKILL.md": {
+    "origem": "agents_skills/spring_boot/skills/springboot-testing/SKILL_SPRINGBOOT_TESTING.md"
+  },
+  "skills/skill-springboot-validacao-hexagonal/references/playbook-FASE3_VALIDACAO_HEXAGONAL.md": {
+    "origem": "playbook/fase3_portoes_qualidade/FASE3_VALIDACAO_HEXAGONAL.md",
+    "dona": "skills/skill-springboot-validacao-hexagonal/SKILL.md"
+  },
+  "skills/skill-springboot-validacao-hexagonal/SKILL.md": {
+    "origem": "agents_skills/spring_boot/skills/springboot-validacao-hexagonal/SKILL_SPRINGBOOT_VALIDACAO_HEXAGONAL.md"
+  },
+  "skills/skill-springboot-validacao-mvc/references/playbook-FASE3_VALIDACAO_MVC.md": {
+    "origem": "playbook/fase3_portoes_qualidade/FASE3_VALIDACAO_MVC.md",
+    "dona": "skills/skill-springboot-validacao-mvc/SKILL.md"
+  },
+  "skills/skill-springboot-validacao-mvc/SKILL.md": {
+    "origem": "agents_skills/spring_boot/skills/springboot-validacao-mvc/SKILL_SPRINGBOOT_VALIDACAO_MVC.md"
+  },
+  "skills/skill-swiftui-components/SKILL.md": {
+    "origem": "agents_skills/ios/skills/swiftui-components/SKILL_IOS_SWIFTUI_COMPONENTS.md"
+  },
+  "skills/skill-tdd/SKILL.md": {
+    "origem": "agents_skills/shared/skills/tdd/SKILL_TDD.md"
+  },
+  "skills/skill-verificacao-pre-conclusao/SKILL.md": {
+    "origem": "agents_skills/shared/skills/verificacao-pre-conclusao/SKILL_VERIFICACAO_PRE_CONCLUSAO.md"
+  }
+}

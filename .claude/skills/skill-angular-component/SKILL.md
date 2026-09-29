@@ -1,0 +1,321 @@
+---
+name: skill-angular-component
+description: Crie componentes standalone modernos do Angular seguindo as melhores práticas da versão 20+. Use para construir componentes de interface do usuário com signal-based inputs/outputs, OnPush change detection, host bindings, content projection e lifecycle hooks. Aciona na criação de componentes, refatoração de class-based inputs para signals, adição de host bindings ou implementação de componentes interativos acessíveis.
+metadata:
+  version: "0.0.1"
+---
+
+
+# Angular Component
+
+Crie standalone components para o Angular v20+. Os componentes são standalone por padrão — NÃO defina `standalone: true`.
+
+## Estrutura do Componente
+
+```typescript
+import { Component, ChangeDetectionStrategy, input, output, computed } from '@angular/core';
+import { booleanAttribute } from '@angular/core';
+
+@Component({
+  selector: 'app-user-card',
+  changeDetection: ChangeDetectionStrategy.OnPush,
+  host: {
+    'class': 'user-card',
+    '[class.active]': 'isActive()',
+    '(click)': 'handleClick()',
+  },
+  template: `
+    <img [src]="avatarUrl()" [alt]="name() + ' avatar'" />
+    <h2>{{ name() }}</h2>
+    @if (showEmail()) {
+      <p>{{ email() }}</p>
+    }
+  `,
+  styles: `
+    :host { display: block; }
+    :host.active { border: 2px solid blue; }
+  `,
+})
+export class UserCardComponent {
+  // Required input
+  name = input.required<string>();
+  
+  // Optional input with default
+  email = input<string>('');
+  showEmail = input(false);
+  
+  // Input with transform
+  isActive = input(false, { transform: booleanAttribute });
+  
+  // Computed from inputs
+  avatarUrl = computed(() => `https://api.example.com/avatar/${this.name()}`);
+  
+  // Output
+  selected = output<string>();
+  
+  handleClick() {
+    this.selected.emit(this.name());
+  }
+}
+```
+
+## Signal Inputs
+
+```typescript
+// Required - deve ser provido pelo componente pai
+name = input.required<string>();
+
+// Optional com valor padrão
+count = input(0);
+
+// Optional without default (undefined allowed)
+label = input<string>();
+
+// With alias for template binding
+size = input('medium', { alias: 'buttonSize' });
+
+// With transform function
+disabled = input(false, { transform: booleanAttribute });
+value = input(0, { transform: numberAttribute });
+```
+
+## Signal Outputs
+
+```typescript
+import { output, outputFromObservable } from '@angular/core';
+
+// Basic output
+clicked = output<void>();
+selected = output<Item>();
+
+// With alias
+valueChange = output<number>({ alias: 'change' });
+
+// From Observable (for RxJS interop)
+scroll$ = new Subject<number>();
+scrolled = outputFromObservable(this.scroll$);
+
+// Emit values
+this.clicked.emit();
+this.selected.emit(item);
+```
+
+## Host Bindings
+
+Use o objeto `host` em `@Component`— NÃO use os decoradores `@HostBinding` ou `@HostListener`.
+
+```typescript
+@Component({
+  selector: 'app-button',
+  host: {
+    // Static attributes
+    'role': 'button',
+    
+    // Dynamic class bindings
+    '[class.primary]': 'variant() === "primary"',
+    '[class.disabled]': 'disabled()',
+    
+    // Dynamic style bindings
+    '[style.--btn-color]': 'color()',
+    
+    // Attribute bindings
+    '[attr.aria-disabled]': 'disabled()',
+    '[attr.tabindex]': 'disabled() ? -1 : 0',
+    // Event listeners
+    '(click)': 'onClick($event)',
+    '(keydown.enter)': 'onClick($event)',
+    '(keydown.space)': 'onClick($event)',
+  },
+  template: `<ng-content />`,
+})
+export class ButtonComponent {
+  variant = input<'primary' | 'secondary'>('primary');
+  disabled = input(false, { transform: booleanAttribute });
+  color = input('#007bff');
+  
+  clicked = output<void>();
+  
+  onClick(event: Event) {
+    if (!this.disabled()) {
+      this.clicked.emit();
+    }
+  }
+}
+```
+
+## Content Projection
+
+```typescript
+@Component({
+  selector: 'app-card',
+  template: `
+    <header>
+      <ng-content select="[card-header]" />
+    </header>
+    <main>
+      <ng-content />
+    </main>
+    <footer>
+      <ng-content select="[card-footer]" />
+    </footer>
+  `,
+})
+export class CardComponent {}
+
+// Usage:
+// <app-card>
+//   <h2 card-header>Title</h2>
+//   <p>Main content</p>
+//   <button card-footer>Action</button>
+// </app-card>
+```
+
+## Lifecycle Hooks
+
+```typescript
+import { 
+  AfterContentInit, AfterViewInit, OnDestroy, OnInit,
+  afterNextRender, afterRender
+} from '@angular/core';
+
+export class MyComponent implements OnInit, AfterContentInit, AfterViewInit, OnDestroy {
+  constructor() {
+    // For DOM manipulation after render (SSR-safe)
+    afterNextRender(() => {
+      // Runs once after first render
+    });
+    
+    afterRender(() => {
+      // Runs after every render
+    });
+  }
+  
+  ngOnInit() { /* Component initialized */ }
+  ngAfterContentInit() { /* Projected content ready */ }
+  ngAfterViewInit() { /* View children ready */ }
+  ngOnDestroy() { /* Cleanup */ }
+}
+```
+
+## Requisitos de Acessibilidade
+
+Os componentes DEVEM:
+- Passar nas verificações de acessibilidade AXE
+- Atender aos padrões WCAG AA
+- Incluir atributos ARIA adequados para elementos interativos
+- Suportar navegação por teclado
+- Manter indicadores de foco visíveis
+
+```typescript
+@Component({
+  selector: 'app-toggle',
+  host: {
+    'role': 'switch',
+    '[attr.aria-checked]': 'checked()',
+    '[attr.aria-label]': 'label()',
+    'tabindex': '0',
+    '(click)': 'toggle()',
+    '(keydown.enter)': 'toggle()',
+    '(keydown.space)': 'toggle(); $event.preventDefault()',
+  },
+  template: `<span class="toggle-track"><span class="toggle-thumb"></span></span>`,
+})
+export class ToggleComponent {
+  label = input.required<string>();
+  checked = input(false, { transform: booleanAttribute });
+  checkedChange = output<boolean>();
+  
+  toggle() {
+    this.checkedChange.emit(!this.checked());
+  }
+}
+```
+
+## Template Syntax (Control Flow)
+
+Use native control flow — NÃO use `*ngIf`, `*ngFor`, `*ngSwitch`.
+
+```html
+<!-- Conditionals -->
+@if (isLoading()) {
+  <app-spinner />
+} @else if (error()) {
+  <app-error [message]="error()" />
+} @else {
+  <app-content [data]="data()" />
+}
+
+<!-- Loops -->
+@for (item of items(); track item.id) {
+  <app-item [item]="item" />
+} @empty {
+  <p>No items found</p>
+}
+
+<!-- Switch -->
+@switch (status()) {
+  @case ('pending') { <span>Pending</span> }
+  @case ('active') { <span>Active</span> }
+  @default { <span>Unknown</span> }
+}
+```
+
+## Class and Style Bindings
+
+NÃO use `ngClass` ou `ngStyle`. Use direct bindings:
+
+```html
+<!-- Class bindings -->
+<div [class.active]="isActive()">Single class</div>
+<div [class]="classString()">Class string</div>
+
+<!-- Style bindings -->
+<div [style.color]="textColor()">Styled text</div>
+<div [style.width.px]="width()">With unit</div>
+```
+
+## Imagens
+
+Use `NgOptimizedImage` para imagens estáticas:
+
+```typescript
+import { NgOptimizedImage } from '@angular/common';
+
+@Component({
+  imports: [NgOptimizedImage],
+  template: `
+    <img ngSrc="/assets/hero.jpg" width="800" height="600" priority />
+    <img [ngSrc]="imageUrl()" width="200" height="200" />
+  `,
+})
+export class HeroComponent {
+  imageUrl = input.required<string>();
+}
+```
+
+## Referências Detalhadas (Em breve):
+
+- [Model Inputs (Two-Way Binding)](references/MODEL_INPUTS.md) 🔄
+- [Signal Queries (View Queries & Content Queries)](references/SIGNAL_QUERIES.md) 🔍
+- [Attribute Directives on Components](references/ATTRIBUTE_DIRECTIVES.md) 🏗️
+- [Dependency Injection in Components](references/COMPONENT_DEPENDENCY_INJECTION.md) 💉
+- [Component Communication Patterns](references/COMPONENT_COMMUNICATION.md) 📡
+- [Dynamic Components](references/DYNAMIC_COMPONENTS.md) 🔀
+- [Error Boundaries](references/ERROR_BOUNDARIES.md) 🛡️
+
+<!-- BEGIN REFERENCES GERADO pelo hub4claude — nao edite a mao -->
+
+## References desta skill
+
+Arquivos de apoio nesta pasta. Não carregam sozinhos: abra o que a implementação exigir.
+
+- [`ATTRIBUTE_DIRECTIVES.md`](references/ATTRIBUTE_DIRECTIVES.md) — Diretivas de Atributo em Componentes
+- [`COMPONENT_COMMUNICATION.md`](references/COMPONENT_COMMUNICATION.md) — Padrões de Comunicação entre Componentes
+- [`COMPONENT_DEPENDENCY_INJECTION.md`](references/COMPONENT_DEPENDENCY_INJECTION.md) — Injeção de Dependência em Componentes
+- [`DYNAMIC_COMPONENTS.md`](references/DYNAMIC_COMPONENTS.md) — Dynamic Components (Carregamento e Renderização)
+- [`ERROR_BOUNDARIES.md`](references/ERROR_BOUNDARIES.md) — Error Boundaries (Resiliência de UI)
+- [`MODEL_INPUTS.md`](references/MODEL_INPUTS.md) — Model Inputs (Signal-based Two-way Binding)
+- [`README.md`](references/README.md) — 🧪 Skill: Angular Component Architect
+- [`SIGNAL_QUERIES.md`](references/SIGNAL_QUERIES.md) — Signal Queries (View & Content Queries)
+
+<!-- END REFERENCES GERADO -->
