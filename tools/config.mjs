@@ -2,7 +2,7 @@
  * config.mjs — carrega tools/sync.config.json uma vez, para todos os scripts do hub4claude.
  *
  * HUB4CLAUDE_CONFIG=<caminho> troca o config (relativo a raiz do repo ou absoluto). Existe para a
- * suite tools/test/ rodar o encadeamento sync -> gera-claude-md -> verifica-referencias num
+ * suite tools/test/ rodar o encadeamento conversao -> geracao dos CLAUDE.md -> verificacao num
  * sandbox: execSync herda o ambiente, entao os filhos leem o mesmo config.
  *
  * Trocar so o config nao isola nada se algum script escrever num caminho fixo. Por isso todo

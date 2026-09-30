@@ -3,6 +3,8 @@
 Este repo distribui o catálogo Foursys (skills, agentes e rules) já convertido para o Claude Code,
 e publica no `~/.claude` só as stacks que cada pessoa escolhe. Não contém o conversor nem o hub.
 
+- Este clone é só o instalador. Para trabalhar, abra o Claude no seu projeto: lá vale o que foi
+  publicado no `~/.claude`, sem o catálogo em dobro.
 - Para instalar, trocar as stacks ou atualizar depois de um `git pull`: `/catalogo-foursys`.
 - Não edite `.claude/` nem `tools/`: tudo vem de quem mantém o catálogo e é sobrescrito na
   próxima versão. A sua escolha de stacks fica em `tools/sync.local.json`, fora do git.

@@ -30,7 +30,7 @@ import fs from 'fs';
 import path from 'path';
 import os from 'os';
 import {
-  ROOT, INDICE, GLOBAL_STACKS, ORIGEM_STACKS, LOCAL_PATH, stackDe, vaiParaGlobal, resumoStacks, stacksInexistentes,
+  ROOT, INDICE, GLOBAL_STACKS, ORIGEM_STACKS, LOCAL_PATH, stackDe, vaiParaGlobal, ruleForaDoGlobal, resumoStacks, stacksInexistentes,
 } from './stacks.mjs';
 import { CFG, CONFIG_ALTERNATIVO, CONFIG_PATH, caminho } from './config.mjs';
 import { reescreverLinksQuebrados, mapaAceitas } from './reescreve-links.mjs';
@@ -202,6 +202,7 @@ for (const pasta of ESPELHADAS) {
     const rp = pasta + '/' + r;
     // .md passa pela reescrita de link (N13); asset vai byte a byte, como sempre foi.
     let conteudo = null;
+    let comLinkDesfeito = false;
     if (/\.md$/i.test(r)) {
       const bruto = fs.readFileSync(a, 'utf8');
       const { texto, desfeitos } = reescreverLinksQuebrados(norm(bruto), {
@@ -209,6 +210,7 @@ for (const pasta of ESPELHADAS) {
       });
       if (desfeitos.length) {
         linksDesfeitos += desfeitos.length;
+        comLinkDesfeito = true;
         for (const d of desfeitos) detalhe.links.push(rp + '  ->  ' + d);
         // Preserva o fim de linha da origem: escrever LF onde a origem tem CRLF faria a
         // comparacao ver diferenca onde nao ha, e o deploy recopiaria a cada execucao.
@@ -219,7 +221,7 @@ for (const pasta of ESPELHADAS) {
     // diferir so por fim de linha, o que faria todo deploy recopiar tudo, sempre.
     const igual = fs.existsSync(b) &&
       norm(conteudo ?? fs.readFileSync(a, 'utf8')) === norm(fs.readFileSync(b, 'utf8'));
-    plano.push({ rp, a, b, conteudo, igual });
+    plano.push({ rp, a, b, conteudo, igual, comLinkDesfeito });
   }
 
   // Remove no destino o que nao deve mais estar la — so dentro das pastas espelhadas, e so o que
@@ -233,7 +235,12 @@ for (const pasta of ESPELHADAS) {
     if (!publicadoAntes.has(rp)) { preservados.push(rp); continue; }
     if (!foraDoGlobal.has(rp) && protegido(rp)) { preservados.push(rp); continue; }
     remover.push(rp);
-    detalhe.removidos.push(rp + (foraDoGlobal.has(rp) ? '   (stack ' + stackDe(rp) + ' fora do global)' : ''));
+    // Todo caminho ate aqui tem um destes tres motivos. Sem rotulo, a troca de canal (o ~/.claude
+    // publicado por outra copia do catalogo) nao se distinguia de remocao indevida (A2).
+    const motivo = !foraDoGlobal.has(rp) ? 'nao existe no .claude/ deste repo'
+      : ruleForaDoGlobal(rp) ? 'rule em globalExcludeRules'
+      : 'stack ' + stackDe(rp) + ' fora do global';
+    detalhe.removidos.push(rp + '   (' + motivo + ')');
   }
 }
 
@@ -382,7 +389,12 @@ console.log('stacks  : ' + GLOBAL_STACKS.join(', ') + '   (' + ORIGEM_STACKS + '
 console.log('fora do global (nao publicados): ' + foraDoGlobal.size);
 console.log('copiados: ' + aEscrever.length);
 console.log('iguais  : ' + (plano.length - aEscrever.length));
-console.log('links desfeitos (destino de stack fora do global): ' + linksDesfeitos);
+// A contagem e da reescrita em memoria, feita em todo deploy: sem separar o que vai ser escrito, o
+// 2o deploy (copiados: 0) parecia mexer em arquivo (A4).
+const comLink = plano.filter((p) => p.comLinkDesfeito);
+const jaIguais = comLink.filter((p) => p.igual).length;
+console.log('links desfeitos (destino de stack fora do global): ' + linksDesfeitos + ' em ' + comLink.length +
+  ' arquivo(s) — ' + (comLink.length - jaIguais) + ' a escrever, ' + jaIguais + ' ja iguais no destino');
 console.log('removidos no destino: ' + remover.length);
 console.log('pastas vazias removidas: ' + dirsRemovidos + (DRY ? '  (so as que ja estavam vazias)' : ''));
 console.log('preservados (nao publicados por nos, ou em keepFiles): ' + preservados.length);

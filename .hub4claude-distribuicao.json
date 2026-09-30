@@ -316,6 +316,7 @@
     ".claude/skills/skill-swiftui-components/SKILL.md",
     ".claude/skills/skill-tdd/SKILL.md",
     ".claude/skills/skill-verificacao-pre-conclusao/SKILL.md",
+    ".gitattributes",
     ".gitignore",
     "CLAUDE.md",
     "LEIA-ME.md",

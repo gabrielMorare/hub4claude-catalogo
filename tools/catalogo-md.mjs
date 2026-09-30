@@ -6,19 +6,22 @@
  * paga em toda sessão. Então aqui geramos ROTEAMENTO POR FAMÍLIA e CONVENÇÕES, não lista.
  *
  * Só lê e devolve texto: quem escreve é o deploy (textoGlobal, com as stacks efetivas) e, no repo
- * do admin, o gera-claude-md.mjs (os arquivos versionados). Vai para a distribuição da equipe, então
+ * do admin, o gerador dos arquivos versionados. Vai para a distribuição da equipe, então
  * não cita nenhuma ferramenta de admin pelo nome: o que é de manutenção sai da stack (admin/consumo).
  */
 
 import fs from 'fs';
 import path from 'path';
-import { vaiParaGlobal, stackDe } from './stacks.mjs';
+import { vaiParaGlobal, stackDe, ruleForaDoGlobal } from './stacks.mjs';
 import { caminho } from './config.mjs';
 
 export const CLA = caminho('outPath');
 export const GLOBAL_MD = caminho('claudeGlobalPath');
 
-export const INI = '<!-- BEGIN CATALOGO GERADO por tools/gera-claude-md.mjs — nao edite a mao -->';
+// Quem procura o bloco procura pelo prefixo: assim o marcador de uma versao anterior (que citava o
+// script gerador) e substituido, nao duplicado.
+export const PREFIXO_INI = '<!-- BEGIN CATALOGO GERADO';
+export const INI = PREFIXO_INI + ' pelo hub4claude — nao edite a mao -->';
 export const FIM = '<!-- END CATALOGO GERADO -->';
 
 // Normaliza BOM e CRLF: sem isso os regex ancorados em $ nao casam (o \r fica antes do fim
@@ -237,8 +240,15 @@ export function bloco(filtro, lista = null, extraProjeto = []) {
     } else {
       linhas.push('- skill sua com o mesmo nome de uma do catálogo faz a publicação parar: dê outro nome à sua;');
     }
-    linhas.push('- rule de arquitetura fica **fora** do global de propósito: copie a do seu projeto para o');
-    linhas.push('  `.claude/rules/` dele.');
+    // Sai do config, nao de texto fixo: a frase fixa prometia "arquitetura fica fora" enquanto
+    // springboot-hexagonal-arch ia para o global de proposito (A1). Rule de stack fora da lista
+    // nao entra: ela nao estaria aqui de qualquer jeito.
+    const fora = regras.filter((r) => ruleForaDoGlobal(r.rp) && lista.includes(stackDe(r.rp))).map((r) => '`' + r.slug + '`');
+    if (fora.length) {
+      const nomes = fora.length > 1 ? fora.slice(0, -1).join(', ') + ' e ' + fora.at(-1) : fora[0];
+      linhas.push('- ficam fora do global as rules ' + nomes + ': projeto que adota uma delas a');
+      linhas.push('  copia do `.claude/rules/` do repo de origem para o dele.');
+    }
   } else {
     linhas.push(...extraProjeto);
   }

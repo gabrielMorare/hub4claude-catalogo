@@ -16,6 +16,10 @@ seu `~/.claude` e passa a valer em todo projeto, só com as stacks que você esc
 3. Rode `/catalogo-foursys`: ele mostra as stacks, pergunta quais você quer, confere as
    referências, mostra o que vai mudar no `~/.claude` e só publica com o seu ok.
 
+O clone é só o instalador: abra o Claude nele para o `/catalogo-foursys` e trabalhe nos seus
+projetos. Aberto aqui, o Claude soma o catálogo do clone ao publicado no `~/.claude`, e skills e
+rules aparecem em dobro.
+
 ## Atualizar
 
 `git pull` e `/catalogo-foursys` de novo. O `CLAUDE.md` do seu `~/.claude` não muda: ele só

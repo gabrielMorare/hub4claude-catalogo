@@ -1,4 +1,4 @@
-<!-- BEGIN CATALOGO GERADO por tools/gera-claude-md.mjs — nao edite a mao -->
+<!-- BEGIN CATALOGO GERADO pelo hub4claude — nao edite a mao -->
 
 > Gerado pelo hub4claude a partir do hub Foursys, do commit `cfc66715daec`.
 > Publicado no global só o que é das stacks: `java`, `node`, `angular`, `arquitetura`, `qa`, `consumo`. O catálogo completo fica no `.claude/` do repo de onde ele foi publicado.
@@ -57,7 +57,7 @@ entender como a Foursys organiza o catálogo.
 
 - para escolher as stacks desta máquina e publicar de novo: `/catalogo-foursys`;
 - skill sua com o mesmo nome de uma do catálogo faz a publicação parar: dê outro nome à sua;
-- rule de arquitetura fica **fora** do global de propósito: copie a do seu projeto para o
-  `.claude/rules/` dele.
+- ficam fora do global as rules `hexagonal-java` e `mvc-java`: projeto que adota uma delas a
+  copia do `.claude/rules/` do repo de origem para o dele.
 
 <!-- END CATALOGO GERADO -->

@@ -34,8 +34,15 @@ Pare e reporte em qualquer passo que não saia como descrito.
    - A stack `pendente` não entra: são casos ambíguos aguardando decisão.
 4. `node tools/verifica-referencias.mjs --strict` → tem que dar 0 quebras.
 5. `node tools/deploy-global.mjs --com-claude-md --dry-run` → mostre a lista "removidos no destino"
-   inteira. Só pode ter o que é de stack que saiu do global (`stack X fora do global`) ou o que
-   saiu do repo no último `git pull`. Qualquer outra remoção: pare. Diga também o que acontece com
+   inteira. Cada linha termina com o motivo:
+   - `(stack X fora do global)` ou `(rule em globalExcludeRules)` → esperado;
+   - `(nao existe no .claude/ deste repo)` → aceite só se
+     `git log --diff-filter=D -1 --format='%h %cs %s' -- .claude/<caminho>` mostra o commit que o
+     removeu, ou se o usuário confirma (AskUserQuestion) que o `~/.claude` foi publicado antes por
+     outra cópia do catálogo; senão, pare;
+   - sem motivo → pare.
+
+   Diga também o que acontece com
    o `CLAUDE.md` do usuário (linha `CLAUDE.md pessoal:`): `criar`, `acrescentar bloco`, `migrar
    bloco antigo` ou `intocado` — em todos, o texto dele fora do bloco `hub4claude` fica como está.
 6. Pergunte (AskUserQuestion): "Publicar" / "Parar". Publicar →
