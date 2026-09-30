@@ -124,7 +124,7 @@
       ]
     },
     "pendente": {
-      "nome": "Em avaliação — classificação ambígua; fica no .claude/ do repo e fora do global até decisão (doc/pendente/dossie-hub-foursys.md). Não pôr em globalStacks",
+      "nome": "Em avaliação — classificação ambígua; fica no .claude/ do repo e fora do global até a decisão com a Foursys. Não pôr em globalStacks",
       "origens": [
         "sdd/generic/foursys-specify.md",
         "sdd/generic/foursys-plan.md",
