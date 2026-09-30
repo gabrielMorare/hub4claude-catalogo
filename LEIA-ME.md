@@ -16,9 +16,16 @@ seu `~/.claude` e passa a valer em todo projeto, só com as stacks que você esc
 3. Rode `/catalogo-foursys`: ele mostra as stacks, pergunta quais você quer, confere as
    referências, mostra o que vai mudar no `~/.claude` e só publica com o seu ok.
 
-O clone é só o instalador: abra o Claude nele para o `/catalogo-foursys` e trabalhe nos seus
+O clone não é lugar de trabalho: abra o Claude nele para o `/catalogo-foursys` e trabalhe nos seus
 projetos. Aberto aqui, o Claude soma o catálogo do clone ao publicado no `~/.claude`, e skills e
 rules aparecem em dobro.
+
+## Usar num projeto sem instalar
+
+Copie do `.claude/` deste clone para o `.claude/` do projeto só o que ele usa: as pastas
+`skills/<nome>/` da stack dele (inteiras: as references vão junto) e **uma** rule de arquitetura
+(`springboot-hexagonal-arch`, `hexagonal-java` ou `mvc-java`, conforme o projeto). As três juntas
+se contradizem, e o Claude escolheria uma de forma imprevisível.
 
 ## Atualizar
 
