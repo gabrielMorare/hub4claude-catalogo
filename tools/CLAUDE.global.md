@@ -1,6 +1,6 @@
 <!-- BEGIN CATALOGO GERADO pelo hub4claude — nao edite a mao -->
 
-> Gerado pelo hub4claude a partir do hub Foursys, do commit `cfc66715daec`.
+> Gerado pelo hub4claude a partir do hub Foursys, do commit `a5498e3b7e78`.
 > Publicado no global só o que é das stacks: `java`, `node`, `angular`, `arquitetura`, `qa`, `consumo`. O catálogo completo fica no `.claude/` do repo de onde ele foi publicado.
 
 ## Roteamento
